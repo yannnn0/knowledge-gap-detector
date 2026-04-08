@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-outfit: 'Outfit', sans-serif;
+  --font-serif: 'Noto Serif SC', serif;
+
+  /* Apple Design System 风格变量 */
+  --apple-bg: #f5f5f7;
+  --apple-card: #ffffff;
+  --apple-text: #1d1d1f;
+  --apple-text-secondary: #86868b;
+  --apple-accent: #0071e3;
+  --apple-accent-hover: #0077ed;
+  --apple-radius-sm: 10px;
+  --apple-radius-md: 14px;
+  --apple-radius-lg: 22px;
+  --apple-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --apple-shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', var(--font-outfit), sans-serif;
+  background: var(--apple-bg);
+  min-height: 100vh;
+  color: var(--apple-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Apple 风格按钮 */
+.apple-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  background: var(--apple-accent);
+  color: white;
+  border: none;
+  border-radius: var(--apple-radius-md);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.apple-btn:hover {
+  background: var(--apple-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--apple-shadow-hover);
+}
+
+.apple-btn:disabled {
+  background: #d1d1d6;
+  color: #ffffff;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Apple 风格卡片 */
+.apple-card {
+  background: var(--apple-card);
+  border-radius: var(--apple-radius-lg);
+  box-shadow: var(--apple-shadow);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Apple 风格输入框 */
+.apple-input {
+  width: 100%;
+  padding: 18px 22px;
+  background: var(--apple-card);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--apple-radius-md);
+  font-size: 17px;
+  color: var(--apple-text);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.apple-input:focus {
+  border-color: var(--apple-accent);
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
+}
+
+.apple-input::placeholder {
+  color: var(--apple-text-secondary);
+}
