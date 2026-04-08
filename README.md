@@ -1,33 +1,67 @@
-# Knowledge Map Analyzer
+# Knowledge Gap Detector
 
 检测你的知识地图与空白区域。输入你的内容（笔记、微博、文章等），AI 分析并可视化你的知识结构和知识盲区。
 
-## 功能
+## 🎯 功能
 
-- **知识地图可视化** - 以网络图形式展示你的知识点及关联
-- **能力雷达图** - 从多个维度评估你的知识水平
-- **空白检测** - 识别你关注较少、有待提升的领域
-- **学习路径建议** - 基于分析结果推荐学习方向
+| 功能 | 描述 |
+|------|------|
+| **知识地图可视化** | 以网络图形式展示你的知识点及关联 |
+| **能力雷达图** | 从 7 个维度评估你的知识水平 |
+| **空白检测** | 识别你关注较少、有待提升的领域 |
+| **学习建议** | 基于分析结果提供个性化学习方向 |
 
-## 在线体验
+## 📊 分析维度
 
-http://localhost:5173 (本地)
+系统从以下 7 个维度分析你的知识结构：
 
-## 技术栈
+1. **职业规划** - 求职技能、工作状态、职业发展
+2. **商业/变现** - 如何将技能转化为收入
+3. **财务管理** - 个人理财、资金管理
+4. **学术研究** - 论文写作、研究方法
+5. **情绪心理** - 心理健康、情绪管理
+6. **人际关系** - 社交技巧、亲密关系
+7. **创意技能** - 设计能力、艺术创作
 
-- React 19 + TypeScript
-- Tailwind CSS 4
-- Recharts (雷达图)
-- react-force-graph-2d (知识网络图)
-- Vite
+## 🖥️ 在线体验
 
-## 本地运行
+**本地运行：**
 
 ```bash
+git clone https://github.com/yannnn0/knowledge-gap-detector
+cd knowledge-gap-detector
 npm install
 npm run dev
 ```
 
-## 设计
+访问 http://localhost:5173
 
-采用 [Miro](https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/miro) 设计风格
+## 🛠️ 技术栈
+
+- **React 19** + TypeScript
+- **Tailwind CSS 4** - 样式
+- **Recharts** - 雷达图可视化
+- **react-force-graph-2d** - 知识网络图
+- **Vite** - 构建工具
+
+## 🎨 设计
+
+采用 [Miro](https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/miro) 设计风格：
+- 柔和 pastel 色点缀
+- Roobert 风格排版
+- 蓝色 #5b76fe 为主色调
+
+## 📝 使用方法
+
+1. 在输入框粘贴你的内容（笔记、博客、社交媒体 posts 等）
+2. 或上传 TXT、MD、JSON 文件
+3. 点击"开始分析"
+4. 查看知识地图、雷达图和空白区域
+
+## 📄 License
+
+MIT
+
+---
+
+Made with Miro design inspiration from [awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
