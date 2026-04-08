@@ -44,12 +44,6 @@ npm run dev
 - **react-force-graph-2d** - 知识网络图
 - **Vite** - 构建工具
 
-## 🎨 设计
-
-采用 [Miro](https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/miro) 设计风格：
-- 柔和 pastel 色点缀
-- Roobert 风格排版
-- 蓝色 #5b76fe 为主色调
 
 ## 📝 使用方法
 
@@ -61,7 +55,3 @@ npm run dev
 ## 📄 License
 
 MIT
-
----
-
-Made with Miro design inspiration from [awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
